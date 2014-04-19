@@ -1,4 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+@font-face{
+  font-family: Popiere-Regular;
+  src: url(fonts/Pompiere-Regular.ttf);
+}
+@font-face{
+  font-family: CabinSketch-Regular;
+  src: url(fonts/CabinSketch-Regular.otf);
+}
 
 // bower:scss
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
@@ -13,6 +21,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 /* Space out content a bit */
 body {
+    background-color: #eceef3;
+    font-family: Popiere-Regular;
     padding-top: 0px;
     padding-bottom: 20px;
 }
@@ -213,5 +223,52 @@ ol.carousel-indicators
     background-image:url('../images/Papertexture.png');
     background-repeat:repeat-x;
     height: 500px;
+
+}
+
+.banner-title{
+  width:40%;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  .title{
+    font-family: CabinSketch-Regular;
+    font-size: 60pt;
+  }
+  .subtitle{
+    margin-top: -29px;
+    font-size:22.5pt;
+    padding-bottom:10px;
+    padding-left:1%;
+  }
+
+  .contentTitle{
+    color:#835ba5;
+    font-size:12pt;
+    padding-left: 1%;
+  }
+
+  .buttonGroup{
+    padding-top:20px;
+    .signup{
+      margin-right:10%
+    }
+  }
+  div {
+    text-align:left;
+  }
+  div.btn{
+    padding:0px;
+    font-size: 20pt;
+    background-color: #f6901e;
+    width: 150px;
+    height:40px;
+    border-radius:0px;
+    text-align: center;
+  }
+
+  hr{
+    margin-top:2%;
+    padding:0px;
+  }
 
 }
